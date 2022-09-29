@@ -10,8 +10,9 @@ if(isset($_POST["submit"]))
 
   // Instantiate SignupController class
   include "../classes/dbh.classes.php";
-  include "../classes/signup-controller.classes.php";
+ 
   include "../classes/signup.classes.php";
+  include "../classes/signup-controller.classes.php";
 
   $signup = new SignupController($uid, $pwd, $pwdRepeat, $email);
 
